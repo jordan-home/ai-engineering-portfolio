@@ -86,7 +86,7 @@
     .hero h1 .hl { color: var(--accent); }
     .hero-sub {
       font-size: 15px; color: var(--text-dim);
-      max-width: 520px; margin: 0 auto 36px;
+      max-width: 540px; margin: 0 auto 36px;
       line-height: 1.7;
     }
     .hero-meta {
@@ -538,19 +538,19 @@
   <div class="container">
     <div class="hero-eyebrow">AI 工程化实践作品集</div>
     <h1>
-      <span class="line">真实项目里的</span>
-      <span class="line hl">人机协同开发流</span>
+      <span class="line">Cursor + AI，我是怎么把一个功能模块</span>
+      <span class="line hl">从设计稿到上线的</span>
     </h1>
     <p class="hero-sub">
-      不是「AI 写代码我检查」，也不是「全 AI 生成不用管」。<br/>
-      设计稿进，健壮代码出——每一步都有人的判断。
+      uuskins.com C2C饰品交易求购模块的真实人机协作过程。<br/>
+      不是 AI 写代码我检查，是真正有来有回的协作。
     </p>
     <div class="hero-meta">
       <span class="hero-tag">Cursor</span>
-      <span class="hero-tag">Claude</span>
       <span class="hero-tag">Apifox</span>
-      <span class="hero-tag">灰度发布</span>
+      <span class="hero-tag">uuskins.com</span>
       <span class="hero-tag">求购 + 供应模块</span>
+      <span class="hero-tag">灰度发布</span>
     </div>
   </div>
 </section>
@@ -562,21 +562,21 @@
   <div class="container">
     <div class="section-label reveal">01 · 工作流总览</div>
     <h2 class="section-title reveal">五步工作流总览</h2>
-    <p class="section-intro reveal">面试官 30 秒扫完即可建立印象：这不是 Demo，是真实项目里的系统化人机协同。</p>
+    <p class="section-intro reveal">一个功能模块从拿到设计稿到上线，Jordan 和 AI 各自在哪些环节出力。</p>
 
     <!-- Big flow diagram -->
     <div class="big-flow reveal">
       <div class="big-flow-labels">
-        <div class="big-flow-label"><span>输入</span></div>
+        <div class="big-flow-label"><span>协作过程</span></div>
       </div>
       <div class="big-flow-steps">
         <div class="big-flow-step">
           <div class="step-num sn1">1</div>
           <div class="step-content">
-            <div class="step-name">Jordan + Claude → 技术方案</div>
-            <div class="step-desc">模块划分 / 目录结构 / 接口设计</div>
+            <div class="step-name">Jordan 拉着 Cursor 定技术方案</div>
+            <div class="step-desc">产品方案 + 设计稿一起丢进去，反复讨论，结合前端最佳实践，最终出技术方案</div>
             <div class="step-tools" style="margin-top:6px">
-              <span class="step-tool tool-claude">Claude</span>
+              <span class="step-tool tool-cursor">Cursor</span>
               <span class="step-tool tool-jordan">Jordan 主导</span>
             </div>
           </div>
@@ -585,8 +585,8 @@
         <div class="big-flow-step">
           <div class="step-num sn2">2</div>
           <div class="step-content">
-            <div class="step-name">Cursor 分批实现 + Jordan 实时 Review</div>
-            <div class="step-desc">搭框架 → 分模块实现 → Jordan 逐批验收</div>
+            <div class="step-name">Cursor 搭框架，按模块分批实现</div>
+            <div class="step-desc">Cursor 先搭框架，再按模块一批一批写代码，Jordan 和 Cursor 一起做 code review</div>
             <div class="step-tools" style="margin-top:6px">
               <span class="step-tool tool-cursor">Cursor</span>
             </div>
@@ -596,8 +596,8 @@
         <div class="big-flow-step">
           <div class="step-num sn3">3</div>
           <div class="step-content">
-            <div class="step-name">Cursor 全局补漏 + 边缘场景</div>
-            <div class="step-desc">对照技术方案整体审查 / 异常 / 空数据 / 边界值</div>
+            <div class="step-name">全局补漏 — Jordan 推动 Cursor 做的</div>
+            <div class="step-desc">Cursor 主动审查整体，主动列还可能有什么问题，Jordan 推动 Cursor 补位</div>
             <div class="step-tools" style="margin-top:6px">
               <span class="step-tool tool-cursor">Cursor</span>
             </div>
@@ -607,8 +607,8 @@
         <div class="big-flow-step">
           <div class="step-num sn4">4</div>
           <div class="step-content">
-            <div class="step-name">Jordan 手动调 UI 细节</div>
-            <div class="step-desc">间距 / 颜色 / 字体 / 交互 — 对照设计稿逐项核验</div>
+            <div class="step-name">手动调 UI 细节</div>
+            <div class="step-desc">间距、字号、动画效果——设计稿里那些细节，AI 生成后 Jordan 逐项手动调</div>
             <div class="step-tools" style="margin-top:6px">
               <span class="step-tool tool-jordan">纯手工</span>
             </div>
@@ -618,10 +618,11 @@
         <div class="big-flow-step">
           <div class="step-num sn5">5</div>
           <div class="step-content">
-            <div class="step-name">Apifox Mock 测试 → 切换真实接口零改动</div>
-            <div class="step-desc">覆盖正常 / 异常 / 灰度开关全场景</div>
+            <div class="step-name">Apifox Mock 测试所有业务场景</div>
+            <div class="step-desc">Jordan 自己测：产品需求里的业务场景 + 自己想的边缘场景（接口异常、返回异常）</div>
             <div class="step-tools" style="margin-top:6px">
               <span class="step-tool tool-apifox">Apifox</span>
+              <span class="step-tool tool-jordan">Jordan 测试</span>
             </div>
           </div>
           <div class="step-role role-human">👤 验证</div>
@@ -632,19 +633,19 @@
     <!-- 3-column summary -->
     <div class="workflow-summary reveal">
       <div class="summary-card">
-        <div class="sc-label">工具选型逻辑</div>
-        <div class="sc-value">不同工具做它最擅长的事</div>
-        <div class="sc-note">Claude 做推理 / Cursor 写代码 / Apifox 测接口</div>
+        <div class="sc-label">核心特点</div>
+        <div class="sc-value">真实有来回的协作，不是甩给 AI</div>
+        <div class="sc-note">Jordan 和 Cursor 反复讨论定方案，code review 一起做</div>
       </div>
       <div class="summary-card">
-        <div class="sc-label">质量把控机制</div>
+        <div class="sc-label">质量把控</div>
         <div class="sc-value">人在关键节点把关</div>
-        <div class="sc-note">定方向（Step 1）→ 逐批验收（Step 2）→ 手动验收（Step 4）</div>
+        <div class="sc-note">定方案（Step 1）→ 逐批 review（Step 2）→ 手动调优（Step 4）→ 全面测试（Step 5）</div>
       </div>
       <div class="summary-card">
         <div class="sc-label">工程化上线</div>
-        <div class="sc-value">灰度开关控制 + Mock 先行</div>
-        <div class="sc-note">服务端配置开关，不改代码即可回滚</div>
+        <div class="sc-value">灰度开关控制 + Mock 测试先行</div>
+        <div class="sc-note">服务端配置灰度，不改代码即可切换，回滚也靠配置</div>
       </div>
     </div>
   </div>
@@ -657,30 +658,30 @@
   <div class="container">
     <div class="section-label reveal">02 · 五步详解</div>
     <h2 class="section-title reveal">五步详解</h2>
-    <p class="section-intro reveal">每一步的结构：目标是什么 → 用什么工具 → Jordan 介入点 → 产出 → 如果没这一步会怎样。</p>
+    <p class="section-intro reveal">每一步 Jordan 和 AI 具体怎么配合，为什么这样分工，哪些必须人做，哪些交给 AI 效率更高。</p>
 
     <!-- Step 1 -->
     <div class="step-card reveal">
       <div class="step-card-header">
         <div class="step-num-lg sn1">1</div>
-        <div class="step-card-title">技术方案输出 <span>// 上游定方向</span></div>
+        <div class="step-card-title">Jordan + Cursor 定技术方案 <span>// 需求到方案的转化</span></div>
         <div class="step-role role-human">👤 Jordan 主导</div>
       </div>
       <div class="step-rows">
         <div class="step-row-label" data-label="🎯 目标"><span class="lbl-icon">🎯</span><span>目标</span></div>
-        <div class="step-row-value">把设计稿（.fig）和产品方案转化成可执行的技术方案：模块划分、目录结构、API 接口定义、状态管理方案</div>
+        <div class="step-row-value">把产品方案和设计稿变成可执行的技术方案，不是直接开写</div>
 
         <div class="step-row-label" data-label="🔧 工具"><span class="lbl-icon">🔧</span><span>工具</span></div>
-        <div class="step-row-value"><code>Claude</code> 深度阅读设计稿和产品文档，Jordan 自己输出技术方案文字版</div>
+        <div class="step-row-value">Cursor — Jordan 把产品方案 + 设计稿一起丢给 Cursor，结合前端最佳实践，反复讨论定稿</div>
 
         <div class="step-row-label" data-label="👤 Jordan 介入"><span class="lbl-icon">👤</span><span>Jordan</span></div>
-        <div class="step-row-value"><span class="highlight">Jordan 是方案输出主体</span>。Claude 辅助理解设计稿，不是 Jordan 把方案甩给 AI 做</div>
+        <div class="step-row-value"><span class="highlight">Jordan 是方案的输出主体</span>，Cursor 提供前端最佳实践建议，Jordan 判断采纳哪些，最终方案 Jordan 拍板</div>
 
         <div class="step-row-label" data-label="📦 产出"><span class="lbl-icon">📦</span><span>产出</span></div>
-        <div class="step-row-value">文字版技术方案：模块清单 / 目录结构 / 接口字段定义 / 状态设计 / 灰度开关设计</div>
+        <div class="step-row-value">技术方案：模块划分 / 目录结构 / 接口设计 / 状态管理方案 / 灰度开关设计</div>
 
         <div class="step-row-label" data-label="⚠️ 无此步"><span class="lbl-icon">⚠️</span><span>无此步</span></div>
-        <div class="step-row-value"><span class="negative">Cursor 不知道项目的目录规范、API 约定、组件分层——边写边想，模块边界模糊，后期返工成本高</span></div>
+        <div class="step-row-value"><span class="negative">Cursor 不知道项目的目录规范、接口约定、组件分层——边写边想，模块边界模糊，后期返工成本高</span></div>
       </div>
     </div>
 
@@ -688,21 +689,21 @@
     <div class="step-card reveal">
       <div class="step-card-header">
         <div class="step-num-lg sn2">2</div>
-        <div class="step-card-title">Cursor 分批实现 + 实时 Review <span>// 中游把质量</span></div>
+        <div class="step-card-title">Cursor 搭框架分批实现 + Jordan 一起 Code Review <span>// 边做边检查</span></div>
         <div class="step-role role-ai">🤖 Cursor 主力</div>
       </div>
       <div class="step-rows">
         <div class="step-row-label" data-label="🎯 目标"><span class="lbl-icon">🎯</span><span>目标</span></div>
-        <div class="step-row-value">按技术方案分模块实现，每批实现完 Jordan 立即检查，及时纠正偏差</div>
+        <div class="step-row-value">按技术方案分模块实现，每批完成 Jordan 立即检查，及时纠正偏差</div>
 
         <div class="step-row-label" data-label="🔧 工具"><span class="lbl-icon">🔧</span><span>工具</span></div>
-        <div class="step-row-value"><code>Cursor Composer</code> — 先搭目录框架，再按模块分批实现，每批完成主动自审</div>
+        <div class="step-row-value"><code>Cursor Composer</code> — 先搭目录框架，再按模块一批一批实现，每批完成主动自审</div>
 
         <div class="step-row-label" data-label="👤 Jordan 介入"><span class="lbl-icon">👤</span><span>Jordan</span></div>
-        <div class="step-row-value">每批实现完立即 Review：接口字段 / 类型定义 / 异常处理 / 是否符合技术方案；<span class="highlight">要求 Cursor 主动自审自己的代码</span>，不是等 Jordan 来找 bug</div>
+        <div class="step-row-value">Cursor 写完一批，Jordan 和 Cursor <span class="highlight">一起 code review</span>：接口字段、类型定义、异常处理、是否贴合技术方案——不是等全部写完再返工</div>
 
         <div class="step-row-label" data-label="📦 产出"><span class="lbl-icon">📦</span><span>产出</span></div>
-        <div class="step-row-value">已 Review 的模块代码 + 经 Cursor 自审后的版本，每批质量有 Jordan 签字确认</div>
+        <div class="step-row-value">已 review 的模块代码，每批质量有 Jordan 签字确认</div>
 
         <div class="step-row-label" data-label="⚠️ 无此步"><span class="lbl-icon">⚠️</span><span>无此步</span></div>
         <div class="step-row-value"><span class="negative">等全部写完再返工：bug 定位成本高、上下文已丢失、Cursor 需要重新理解全局，修复效率低</span></div>
@@ -713,21 +714,21 @@
     <div class="step-card reveal">
       <div class="step-card-header">
         <div class="step-num-lg sn3">3</div>
-        <div class="step-card-title">全局补漏 + 边缘场景 <span>// 主动预判</span></div>
+        <div class="step-card-title">全局补漏 <span>// Jordan 推动 Cursor 主动预判</span></div>
         <div class="step-role role-ai">🤖 Cursor 补位</div>
       </div>
       <div class="step-rows">
         <div class="step-row-label" data-label="🎯 目标"><span class="lbl-icon">🎯</span><span>目标</span></div>
-        <div class="step-row-value">所有模块完成后，Cursor 整体检查：对照技术方案查漏、主动分析边缘场景（异常 / 空数据 / 边界值）</div>
+        <div class="step-row-value">所有模块写完后，Cursor 整体审查一遍，主动列「还可能有什么问题」</div>
 
         <div class="step-row-label" data-label="🔧 工具"><span class="lbl-icon">🔧</span><span>工具</span></div>
-        <div class="step-row-value"><code>Cursor</code> — 整体审查模式，主动列出「还可能出什么问题」</div>
+        <div class="step-row-value"><code>Cursor</code> — 整体审查模式，主动列出边缘场景清单（异常、空数据、边界值）</div>
 
         <div class="step-row-label" data-label="👤 Jordan 介入"><span class="lbl-icon">👤</span><span>Jordan</span></div>
-        <div class="step-row-value">审查 Cursor 的补漏清单，确认采纳或补充；<span class="highlight">不是等 bug 出现再修，是主动预判</span></div>
+        <div class="step-row-value"><span class="highlight">是 Jordan 推动 Cursor 做的</span>，不是等 bug 出现再修。Jordan 审查补漏清单，确认采纳或补充</div>
 
         <div class="step-row-label" data-label="📦 产出"><span class="lbl-icon">📦</span><span>产出</span></div>
-        <div class="step-row-value">边缘场景覆盖清单 + 已处理的兜底逻辑（空状态 / 超时重试 / 边界值）</div>
+        <div class="step-row-value">边缘场景覆盖清单 + 已处理的兜底逻辑（空状态、超时重试、边界值）</div>
 
         <div class="step-row-label" data-label="⚠️ 无此步"><span class="lbl-icon">⚠️</span><span>无此步</span></div>
         <div class="step-row-value"><span class="negative">上线后才发现空数据页面没兜底、库存=0 没做拦截——用户看到白屏或报错，体验差且修起来被动</span></div>
@@ -738,18 +739,18 @@
     <div class="step-card reveal">
       <div class="step-card-header">
         <div class="step-num-lg sn4">4</div>
-        <div class="step-card-title">手动调 UI 细节 <span>// 下游做验收</span></div>
+        <div class="step-card-title">手动调 UI 细节 <span>// 设计稿还原这一步必须人做</span></div>
         <div class="step-role role-human">👤 纯手工</div>
       </div>
       <div class="step-rows">
         <div class="step-row-label" data-label="🎯 目标"><span class="lbl-icon">🎯</span><span>目标</span></div>
-        <div class="step-row-value">对照设计稿手动核验：间距 / 颜色 / 字体大小 / 交互细节，确保 AI 产出与设计稿一致</div>
+        <div class="step-row-value">对照设计稿手动核验：间距、字号、动画效果——AI 生成后这些细节必须人逐项调</div>
 
         <div class="step-row-label" data-label="🔧 工具"><span class="lbl-icon">🔧</span><span>工具</span></div>
         <div class="step-row-value">浏览器 DevTools / Figma 原型 — Jordan 逐项对照设计稿检查</div>
 
         <div class="step-row-label" data-label="👤 Jordan 介入"><span class="lbl-icon">👤</span><span>Jordan</span></div>
-        <div class="step-row-value"><span class="highlight">这是纯人工的工作，AI 不擅长也不应该替代</span>。Jordan 分得清 AI 的边界</div>
+        <div class="step-row-value"><span class="highlight">AI 不擅长也不应该替代这一步</span>。间距差几个像素、字号大了一号、动画节奏不对——这些必须人眼对照设计稿来调</div>
 
         <div class="step-row-label" data-label="📦 产出"><span class="lbl-icon">📦</span><span>产出</span></div>
         <div class="step-row-value">像素级还原设计稿的 UI 输出，可以交付给 QA 测试的版本</div>
@@ -763,21 +764,21 @@
     <div class="step-card reveal">
       <div class="step-card-header">
         <div class="step-num-lg sn5">5</div>
-        <div class="step-card-title">Apifox Mock 测试 + 切换真实接口 <span>// 工程化验证</span></div>
+        <div class="step-card-title">Apifox Mock 测试所有业务场景 <span>// Jordan 自己想的边缘场景也要测</span></div>
         <div class="step-role role-human">👤 Jordan 验证</div>
       </div>
       <div class="step-rows">
         <div class="step-row-label" data-label="🎯 目标"><span class="lbl-icon">🎯</span><span>目标</span></div>
-        <div class="step-row-value">用 Mock 模拟各种接口调用场景，覆盖正常 / 异常 / 灰度开关全场景；切换真实接口时代码零改动</div>
+        <div class="step-row-value">用 Mock 模拟各种接口调用场景，覆盖正常场景 + 产品需求里写的场景 + Jordan 自己想的边缘场景</div>
 
         <div class="step-row-label" data-label="🔧 工具"><span class="lbl-icon">🔧</span><span>工具</span></div>
-        <div class="step-row-value"><code>Apifox</code> — 定义接口结构 / Mock 数据 / 场景化测试（正常 / 空数据 / 500 / 超时 / 灰度过滤）</div>
+        <div class="step-row-value"><code>Apifox</code> — Mock 各种场景：正常返回、空数据、接口 500、超时、灰度开关不同状态</div>
 
         <div class="step-row-label" data-label="👤 Jordan 介入"><span class="lbl-icon">👤</span><span>Jordan</span></div>
-        <div class="step-row-value">编写 Mock 场景用例、审查测试覆盖率；<span class="highlight">切换真实接口时不做代码改动</span>——说明代码干净、接口抽象到位</div>
+        <div class="step-row-value">不只是测产品需求里的业务场景，<span class="highlight">Jordan 还会想自己的边缘场景</span>：接口异常了页面怎么表现、返回数据格式不对怎么兜底。切换真实接口时代码零改动</div>
 
         <div class="step-row-label" data-label="📦 产出"><span class="lbl-icon">📦</span><span>产出</span></div>
-        <div class="step-row-value">全场景测试通过的接口层代码，切换成本为零</div>
+        <div class="step-row-value">全场景测试通过的接口层代码，切换真实接口成本为零——说明代码干净、接口抽象到位</div>
 
         <div class="step-row-label" data-label="⚠️ 无此步"><span class="lbl-icon">⚠️</span><span>无此步</span></div>
         <div class="step-row-value"><span class="negative">前端等后端接口才能开发，进度受阻；上线切真实接口需要改代码，容易出 bug</span></div>
@@ -792,27 +793,27 @@
 <section class="cases-section" id="cases">
   <div class="container">
     <div class="section-label reveal">03 · 功能案例</div>
-    <h2 class="section-title reveal">功能案例：求购模块 + 供应模块</h2>
-    <p class="section-intro reveal">工作流落地在真实业务模块上——不是 Demo，是实际需求。</p>
+    <h2 class="section-title reveal">功能案例：uuskins.com 求购 + 供应模块</h2>
+    <p class="section-intro reveal">工作流落地在真实业务模块上——CS2 饰品交易平台，日均万级订单量。</p>
 
     <!-- Two module cards -->
     <div class="case-grid reveal">
       <div class="case-card">
         <div class="case-label">Case 01</div>
         <div class="case-name">求购模块</div>
-        <div class="case-desc">多入口（列表页 / 搜索页 / Banner），多字段筛选，灰度开关控制新逻辑曝光比例。</div>
+        <div class="case-desc">买家提交意愿单——填写商品信息、期望价格、数量，由 Jordan 负责前端。多入口（列表页、搜索页、Banner 入口），灰度开关控制新逻辑曝光比例。</div>
       </div>
       <div class="case-card">
         <div class="case-label">Case 02</div>
         <div class="case-name">供应模块</div>
-        <div class="case-desc">多入口详情页，库存边界值处理（库存=0 时显示已售罄），新旧逻辑切换。</div>
+        <div class="case-desc">卖家商品满足求购条件时主动供应给买家。当库存=0 时显示已售罄，边界值处理到位。</div>
       </div>
     </div>
 
     <!-- Gray switch diagram -->
     <div class="gray-switch reveal">
-      <div class="gs-title">🚦 灰度开关 — if-else 示意图</div>
-      <div class="gs-sub">服务端控制，不改代码发版，配置即可切换</div>
+      <div class="gs-title">🚦 灰度开关 — 服务端下发</div>
+      <div class="gs-sub">服务端配置控制，不改代码发版，部分用户看到新逻辑，部分用户看到旧逻辑</div>
 
       <div class="gs-diagram">
         <div class="gs-line">
@@ -825,14 +826,14 @@
         <div class="gs-line">
           <div class="gs-yes">
             <span class="gs-arrow">✓</span>
-            <span>曝光 30% 用户群</span>
+            <span>命中灰度群（部分用户）</span>
           </div>
           <div class="gs-result green">→ 新逻辑</div>
         </div>
         <div class="gs-line">
           <div class="gs-no">
             <span class="gs-arrow">✗</span>
-            <span>其余 70% 用户</span>
+            <span>其余用户</span>
           </div>
           <div class="gs-result old">→ 旧逻辑</div>
         </div>
@@ -864,11 +865,11 @@
 
     <!-- Edge cases -->
     <div class="edge-cases reveal">
-      <div class="ec-title">🔍 边缘场景主动补位（Cursor 全局补漏阶段覆盖）</div>
+      <div class="ec-title">🔍 边缘场景（Jordan 自己想的边缘场景 + 全局补漏阶段覆盖）</div>
       <div class="ec-list">
         <div class="ec-item">
           <span class="ec-icon">🚫</span>
-          <span class="ec-text"><strong>数据为空</strong>：列表为空、接口 500、网络超时——每个异常状态都有兜底 UI，不让用户看到白屏</span>
+          <span class="ec-text"><strong>接口异常</strong>：接口 500、网络超时——每个异常状态都有兜底 UI，不让用户看到白屏</span>
         </div>
         <div class="ec-item">
           <span class="ec-icon">📏</span>
@@ -876,7 +877,7 @@
         </div>
         <div class="ec-item">
           <span class="ec-icon">🔀</span>
-          <span class="ec-text"><strong>灰度分支</strong>：开关 0% / 30% / 100% 三种情况的前端表现都正确——Apifox Mock 三个场景逐一验证</span>
+          <span class="ec-text"><strong>灰度分支</strong>：开关 0% / 部分曝光 / 100% 三种情况的前端表现都正确——Apifox Mock 三个场景逐一验证</span>
         </div>
         <div class="ec-item">
           <span class="ec-icon">⏱️</span>
@@ -894,7 +895,7 @@
   <div class="container">
     <div class="section-label reveal">04 · 工具链选型</div>
     <h2 class="section-title reveal">工具链选型</h2>
-    <p class="section-intro reveal">不是随机挑工具，而是「不同工具做它最擅长的事」。</p>
+    <p class="section-intro reveal">不是挑最贵的工具，是挑最合适的。Jordan 一直在用的真实工具链。</p>
 
     <div class="tool-table reveal">
       <div class="tool-table-header">
@@ -904,21 +905,11 @@
       </div>
       <div class="tool-row">
         <div class="tool-name">
-          <span class="tool-icon">🧠</span>Claude
-        </div>
-        <div class="tool-role">出方案 / 解决疑难问题</div>
-        <div class="tool-reason">
-          擅长复杂推理和架构判断，能深度理解设计稿和产品文档的意图。
-          <div class="tool-limit">不适合大量重复编码——用它写整个项目是浪费。</div>
-        </div>
-      </div>
-      <div class="tool-row">
-        <div class="tool-name">
           <span class="tool-icon">⚡</span>Cursor
         </div>
-        <div class="tool-role">承担主要编码任务</div>
+        <div class="tool-role">一直在用，提效明显</div>
         <div class="tool-reason">
-          经济、可实时 Review、分模块实现可控；Cursor 自审机制保证每批产出有基本质量。
+          经济、可实时 Review、分模块实现可控；Jordan 和 Cursor 一起讨论定方案、一起 code review，真正有来回的协作。
           <div class="tool-limit">生成质量依赖提示词质量，复杂架构决策仍需人判断。</div>
         </div>
       </div>
@@ -928,15 +919,25 @@
         </div>
         <div class="tool-role">Mock 接口 + 场景测试</div>
         <div class="tool-reason">
-          代码不留调试代码，切换真实接口零改动——接口抽象到位，工程化上线思维。
+          代码里不留调试代码，切换真实接口时代码零改动——说明接口抽象到位，工程化上线思维。
           <div class="tool-limit">需要提前定义接口结构，前期有一定定义成本。</div>
+        </div>
+      </div>
+      <div class="tool-row">
+        <div class="tool-name">
+          <span class="tool-icon">🧠</span>Claude
+        </div>
+        <div class="tool-role">适合定方案（本次没用到）</div>
+        <div class="tool-reason">
+          擅长复杂推理和架构判断，适合在需要深度方案讨论的场景里出力。
+          <div class="tool-limit">本场景 Jordan 选择直接在 Cursor 里讨论方案，Claude 本次未使用，但知道它适合哪里。</div>
         </div>
       </div>
     </div>
 
     <div class="tool-philosophy reveal">
       <strong>核心逻辑一句话：</strong>「不同工具做它最擅长的事」
-      — 如果只用 Cursor 做所有事：架构判断不如 Claude、Mock 能力不如 Apifox，工具边界感清晰才说明有判断力。
+      — Cursor 一直在用，提效明显；Apifox 让代码干净、切换零成本；Claude 适合定方案，知道边界在哪里才是真懂。
     </div>
   </div>
 </section>
@@ -947,7 +948,7 @@
 <section class="cta-section">
   <div class="container">
     <div class="cta-title">黄刚 · 高级前端工程师</div>
-    <div class="cta-role">8年前端 · Next.js SSR / AI 工程化 / 前端架构</div>
+    <div class="cta-role">8年前端 · AI 工程化 · 前端架构</div>
     <a href="mailto:2047441719@qq.com" class="cta-email">
       <span class="at">📮</span> 2047441719@qq.com
     </a>
